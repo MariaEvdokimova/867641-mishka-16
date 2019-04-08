@@ -1,0 +1,19 @@
+@charset "utf-8";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/normalize";
+@import "base/fonts";
+@import "base/typography";
+@import "base/base";
+@import "blocks/visually-hidden";
+@import "blocks/page-main";
+@import "blocks/intro";
+@import "blocks/week-product";
+@import "blocks/about-us";
+@import "blocks/product";
+@import "layout/site-list";
+@import "layout/page-footer";
+@import "layout/social";
+@import "layout/copyright";
+@import "components/button";
+

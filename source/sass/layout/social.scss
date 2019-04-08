@@ -1,0 +1,13 @@
+.page-footer__social {
+  @include reset-margin-padding;
+}
+
+.social__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  padding-right: 40px;
+}
