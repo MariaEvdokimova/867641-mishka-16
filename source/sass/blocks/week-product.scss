@@ -1,3 +1,7 @@
+.week-product {
+  margin-bottom: 73px;
+}
+
 .week-product__title {
   @include bold-text(25px);
   @include reset-margin-padding;

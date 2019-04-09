@@ -1,0 +1,38 @@
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-family-base;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-base;
+  line-height: 24px;
+  color: $color-grey-brown;
+
+  background-color: $color-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.button {
+  padding: 16px 0;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: $color-grey-brown;
+  background-color: $color-white;
+  border: solid 2px $color-grey-brown;
+}

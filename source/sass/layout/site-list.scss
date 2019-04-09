@@ -1,12 +1,3 @@
-.main-nav__toggle--bar1,
-.main-nav__toggle--bar2,
-.main-nav__toggle--bar3 {
-  width: 20px;
-  height: 2px;
-  background-color: #231f20;
-  margin: 6px 0;
-}
-
 .site-list {
   @include reset-list;
 }

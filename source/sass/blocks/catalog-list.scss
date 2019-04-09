@@ -12,6 +12,11 @@
 
 .catalog-list__link {
   @include bold-text(19px, 24px);
+  display: block;
+  width: 110px;
   text-align: left;
   color: $color-white;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 30px;
 }
