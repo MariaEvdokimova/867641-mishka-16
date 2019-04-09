@@ -1,0 +1,25 @@
+.product {
+  margin-bottom: 30px;
+}
+
+.product__list {
+  @include reset-list;
+}
+
+.product__title {
+  @include reset-margin-padding;
+}
+
+.product__title-link {
+  @include bold-text(17px, 24px);
+  color: $color-black;
+}
+
+.product__property {
+  font-size: 13px;
+}
+
+.product__price-value {
+  @include bold-text(15px, 24px);
+  color: $color-black;
+}

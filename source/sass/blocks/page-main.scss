@@ -1,0 +1,12 @@
+.page-main {
+  margin-bottom: 40px;
+}
+
+.page-main__title {
+  @include bold-text();
+  @include reset-margin-padding;
+  text-align: center;
+  background-color: $light-grey;
+  padding: 75px 0;
+  margin-bottom: 30px;
+}

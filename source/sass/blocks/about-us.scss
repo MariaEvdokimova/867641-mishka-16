@@ -1,0 +1,18 @@
+.about-us {
+  margin-bottom: 55px;
+}
+
+.about-us__title {
+  @include bold-text(25px);
+  @include reset-margin-padding;
+  color: $color-black;
+}
+
+.about-us__list {
+  @include reset-list;
+}
+
+.about-us__item {
+  @include bold-text(17px, 20px);
+  color: $color-black;
+}

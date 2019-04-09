@@ -1,0 +1,30 @@
+.week-product {
+  margin-bottom: 73px;
+}
+
+.week-product__title {
+  @include bold-text(25px);
+  @include reset-margin-padding;
+}
+
+.week-product__mark {
+  @include bold-text (17px, 20px);
+  text-transform: uppercase;
+  color: $seafoam-blue;
+}
+
+.week-product__description {
+  @include reset-margin-padding;
+}
+
+.week-product__details {
+  @include reset-margin-padding;
+}
+
+.week-product__image {
+  margin-bottom: 25px;
+}
+
+.week-product__price {
+  @include bold-text(17px, 24px);
+}
