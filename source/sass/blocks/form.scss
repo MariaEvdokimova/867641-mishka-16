@@ -1,0 +1,62 @@
+.form__item {
+  @include reset-margin-padding;
+  border: none;
+  margin-bottom: 33px;
+}
+
+.form__legend {
+  @include bold-text(17px, 16px);
+  text-align: left;
+  text-transform: uppercase;
+  color: $seafoam-blue;
+  margin-bottom: 23px;
+}
+
+.form__type-list {
+  @include reset-list;
+}
+
+.form__type-item {
+  margin-bottom: 23px;
+  padding-left: 60px;
+}
+
+.form__label {
+  @include bold-text(17px, 18px);
+  text-align: left;
+  color: $color-black;
+}
+
+.form__color-list {
+  @include reset-list;
+}
+
+.form__color-item {
+  margin-bottom: 40px;
+  padding-left: 60px;
+}
+
+.form__input {
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+  border: none;
+  border-bottom: 2px solid $color-black;
+  width: 260px;
+  padding-bottom: 17px;
+}
+
+.form__text {
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+  border: 2px solid $color-black;
+  width: 226px;
+  padding: 17px;
+}
+
+.form__comment {
+  @include reset-margin-padding;
+  margin-top: -25px;
+  margin-bottom: 25px;
+}

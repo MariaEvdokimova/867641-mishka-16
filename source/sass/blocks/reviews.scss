@@ -1,0 +1,39 @@
+.reviews {
+  margin-bottom: 45px;
+}
+
+.reviews__title {
+  @include bold-text(25px);
+  text-align: left;
+  color: $color-black;
+  margin-bottom: 30px;
+}
+
+.reviews__item {
+  @include reset-margin-padding;
+  margin-bottom: 30px;
+}
+
+.reviews__text {
+  line-height: 30px;
+  text-align: left;
+
+  @include reset-margin-padding;
+  margin-bottom: 30px;
+}
+
+.reviews__author-name {
+  @include bold-text(17px, 24px);
+  font-style: normal;
+  color: $color-black;
+}
+
+.reviews__author-login {
+  font-size: 17px;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.reviews__switch {
+  margin-bottom: 38px;
+}
