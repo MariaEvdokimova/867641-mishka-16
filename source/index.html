@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -138,35 +139,39 @@
               <cite class="reviews__author-login">@misssssiskras</cite>
             </blockquote>
           </div>
+          <div class="reviews__switch">
             <button class="reviews__prev reviews__prev--button" type="button">Предыдущий отзыв</button>
             <button class="reviews__next reviews__next--button" type="button">Следующий отзыв</button>
+          </div>
             <a class="reviews__button button" href="#">Написать</a>
         </div>
       </section>
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__info table">
-            <tr class="table__row">
-              <td class="table__cell">
-                e-mail:
-              </td>
-              <td class="table__cell">
-                info@mimimishkashop.ru
-              </td>
-            </tr>
-            <tr class="table__row">
-              <td class="table__cell">
-                адрес:
-              </td>
-              <td class="table__cell">
-                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-              </td>
-            </tr>
-          </table>
+          <div class="container">
+            <h2 class="contacts__title">Контакты</h2>
+            <table class="contacts__info table">
+              <tr class="table__row">
+                <td class="table__cell">
+                  e-mail:
+                </td>
+                <td class="table__cell">
+                  info@mimimishkashop.ru
+                </td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__cell">
+                  адрес:
+                </td>
+                <td class="table__cell">
+                  г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+                </td>
+              </tr>
+            </table>
+          </div>
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1554371894312!5m2!1sru!2sru" width="320" height="457" frameborder="0" style="border:0" allowfullscreen></iframe>
-          <div class="contacts__feedback" >
+          <div class="contacts__feedback container" >
             <a class="button" href="#">Напишите нам</a>
           </div>
         </div>
@@ -175,7 +180,7 @@
 
     <footer class="page-footer container">
       <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
+        <div class="social">
           <span class="visually-hidden">Мы в соцсетях:</span>
           <ul class="social__list">
             <li class="social__item">
@@ -216,7 +221,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
+        <div class="copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">Разработано</span>
             <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">

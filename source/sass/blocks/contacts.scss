@@ -1,0 +1,11 @@
+.contacts__title {
+  @include bold-text(18px);
+  text-align: left;
+  color: $color-black;
+  margin-bottom: 35px;
+}
+
+.table__cell {
+  text-align: left;
+  line-height: 30px;
+}
