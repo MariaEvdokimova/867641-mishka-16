@@ -14,5 +14,66 @@
 
 .about-us__item {
   @include bold-text(17px, 20px);
+  text-align: left;
   color: $color-black;
+
+  padding-top: 85px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about-us__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+
+    width: 295px;
+    margin-right: 37px;
+    margin-bottom: 10px;
+    padding-top: 102px;
+  }
+
+  .about-us__item:nth-child(4) {
+    order: 1;
+  }
+
+  .about-us__item:nth-child(2) {
+    order: 2;
+  }
+
+  .about-us__item:nth-child(5) {
+    order: 3;
+  }
+
+  .about-us__item:nth-child(3) {
+    order: 4;
+  }
+
+  .about-us__item:nth-child(6) {
+    order: 5;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .about-us {
+    margin-left: 180px;
+  }
+
+  .about-us__wrapper {
+    margin-right: 365px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
