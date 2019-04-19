@@ -1,0 +1,144 @@
+.product-card__image img {
+  display: block;
+}
+
+.product-card__info {
+  width: 258px;
+
+  border: 1px solid $light-grey-border;
+}
+
+.product-card__title {
+  @include reset-margin-padding;
+  margin-top: 25px;
+  margin-left: 28px;
+  margin-bottom: 8px;
+}
+
+.product-card__title-link {
+  @include bold-text(17px, 24px);
+  color: $color-black;
+}
+
+.product-card__property {
+  font-size: 13px;
+
+  margin-top: 0;
+  margin-left: 28px;
+  margin-bottom: 45px;
+}
+
+.product-card__price {
+  margin-bottom: 25px;
+}
+
+.product-card__price-value {
+  @include bold-text(15px, 24px);
+  color: $color-black;
+
+  margin-left: 28px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .product-card {
+    display: flex;
+  }
+
+  .product-card__image {
+    width: 334px;
+    height: 334px;
+
+    background-color: $color-white;
+  }
+
+  .product-card__image img {
+    height: 0;
+    width: 0;
+  }
+
+  .product-card__image--bunny {
+    background-image: url("../img/photo-hare-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .product-card__image--basket {
+    background-image: url("../img/photo-bowl-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .product-card__image--toys {
+    background-image: url("../img/photo-toys-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .product-card__info {
+    display: flex;
+    flex-direction: column;
+
+    width: 335px;
+  }
+
+  .product-card__title {
+    margin-bottom: 4px;
+  }
+
+  .product-card__title-link {
+    font-size: 20px;
+  }
+
+  .product-card__property {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .product-card__price-value {
+    font-size: 17px;
+  }
+
+  .product-card__price {
+    margin-top: auto;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card__image {
+    display: block;
+    width: 316px;
+    height: 462px;
+
+    background-color: $color-white;
+  }
+
+  .product-card__image--bunny {
+    background-image: url("../img/photo-hare-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .product-card__image--basket {
+    background-image: url("../img/photo-bowl-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .product-card__image--toys {
+    background-image: url("../img/photo-toys-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .product-card__info {
+    flex-grow: 1;
+
+    width: 314px;
+  }
+
+  .product-card__title {
+    margin-bottom: 4px;
+  }
+
+  .product-card__property {
+    margin-bottom: 35px;
+  }
+}

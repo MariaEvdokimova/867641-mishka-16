@@ -6,7 +6,7 @@
   @include bold-text(25px);
   text-align: left;
   color: $color-black;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .reviews__item {
@@ -19,7 +19,7 @@
   text-align: left;
 
   @include reset-margin-padding;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .reviews__author-name {

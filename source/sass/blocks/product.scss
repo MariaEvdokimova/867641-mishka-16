@@ -6,20 +6,30 @@
   @include reset-list;
 }
 
-.product__title {
-  @include reset-margin-padding;
+.product__list-item {
+  margin-bottom: 30px;
 }
 
-.product__title-link {
-  @include bold-text(17px, 24px);
-  color: $color-black;
+@media screen and (min-width: $tablet-width) {
+  .product__list-item {
+    margin-bottom: 54px;
+  }
 }
 
-.product__property {
-  font-size: 13px;
-}
+@media screen and (min-width: $desktop-width) {
+  .product__list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-.product__price-value {
-  @include bold-text(15px, 24px);
-  color: $color-black;
+    margin-bottom: 57px;
+  }
+
+  .product__list-item {
+    display: flex;
+    align-items: stretch;
+
+    margin-bottom: 0;
+  }
 }

@@ -1,5 +1,20 @@
+/* Шрифты */
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 
@@ -21,6 +36,22 @@ img {
   height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 260px;
   margin: 0 auto;
@@ -28,11 +59,29 @@ img {
 }
 
 .button {
-  padding: 16px 0;
+  display: block;
+
+  @include bold-text(18px, 20px);
   text-align: center;
-  font-weight: $font-weight-bold;
   text-transform: uppercase;
   color: $color-grey-brown;
+
+  padding: 14px 0;
+
   background-color: $color-white;
   border: solid 2px $color-grey-brown;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .container {
+    width: 668px;
+    padding: 0 43px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .container {
+    width: 1050px;
+    padding: 0 50px;
+  }
 }
