@@ -1,7 +1,5 @@
-.form__item {
-  @include reset-margin-padding;
-  border: none;
-  margin-bottom: 33px;
+.form__type-item:last-child {
+  margin-bottom: 44px;
 }
 
 .form__legend {
@@ -9,7 +7,20 @@
   text-align: left;
   text-transform: uppercase;
   color: $seafoam-blue;
-  margin-bottom: 23px;
+
+  margin-bottom: 25px;
+}
+
+.form__item:nth-child(3) .form__legend {
+  margin-bottom: 20px;
+}
+
+.form__legend-phone {
+  margin-bottom: 6px;
+}
+
+.form__legend-email {
+  margin-bottom: 7px;
 }
 
 .form__type-list {
@@ -17,14 +28,49 @@
 }
 
 .form__type-item {
-  margin-bottom: 23px;
-  padding-left: 60px;
+  position: relative;
+
+  margin-bottom: 13px;
+  padding-left: 62px;
 }
 
 .form__label {
+  display: inline-block;
+  vertical-align: bottom;
+
   @include bold-text(17px, 18px);
   text-align: left;
   color: $color-black;
+
+  padding-top: 10px;
+}
+
+.form__radio + label::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 35px;
+  height: 35px;
+
+  border: 2px solid $color-grey-brown;
+  border-radius: 50%;
+}
+
+.form__radio:checked + label::after {
+  content: "";
+  position: absolute;
+
+  left: 11px;
+  top: 12px;
+
+  width: 16px;
+  height: 16px;
+
+  background: $seafoam-blue;
+  border-radius: 50%;
 }
 
 .form__color-list {
@@ -32,31 +78,323 @@
 }
 
 .form__color-item {
-  margin-bottom: 40px;
-  padding-left: 60px;
+  position: relative;
+
+  margin-bottom: 33px;
+  padding-left: 62px;
+}
+
+.form__color-item:last-child {
+  margin-bottom: 43px;
+}
+
+.form__color-checkbox::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 36px;
+  height: 35px;
+
+  background: transparent;
+  border: 2px solid $color-grey-brown;
+}
+
+.form__color-checkbox input[type="checkbox"]:checked + .form__checkbox-tick {
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: 8px;
+    top: 22px;
+
+    width: 10px;
+    height: 2px;
+
+    background-color: $color-black;
+
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: 13px;
+    top: 19px;
+
+    width: 20px;
+    height: 2px;
+
+    background-color: $color-black;
+
+    transform: rotate(-45deg);
+  }
+}
+
+.form__name-item {
+  margin-bottom: 12px;
+}
+
+.form__name-item:nth-last-of-type(1) {
+  margin-bottom: 35px;
 }
 
 .form__input {
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
+
   border: none;
   border-bottom: 2px solid $color-black;
+
   width: 260px;
-  padding-bottom: 17px;
+
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+
+.form__phone-item {
+  margin-bottom: 32px;
+}
+
+.form__email-item {
+  margin-bottom: 33px;
+}
+
+.form__text-item {
+  margin-bottom: 10px;
 }
 
 .form__text {
   font-size: 17px;
   line-height: 18px;
   color: rgba(68, 68, 68, 0.3);
+
   border: 2px solid $color-black;
+
   width: 226px;
-  padding: 17px;
+
+  padding: 15px;
 }
 
 .form__comment {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+
   @include reset-margin-padding;
-  margin-top: -25px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.form__button {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 55px;
+}
+
+@media screen and (min-width: $tablet-width) {
+  .form__color-wrapper {
+    background-color: $light-grey;
+  }
+
+  .form__item {
+    display: flex;
+  }
+
+  .form__legend {
+    display: block;
+
+    width: 167px;
+
+    margin-top: 68px;
+  }
+
+  .form__type-list {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .form__type-item {
+    margin-bottom: 44px;
+    padding-left: 82px;
+  }
+
+  .form__label {
+    font-size: 19px;
+
+    padding-top: 15px;
+  }
+
+  .form__radio + label::before {
+    width: 48px;
+    height: 48px;
+  }
+
+  .form__radio:checked + label::after {
+    left: 14px;
+    top: 15px;
+
+    width: 22px;
+    height: 22px;
+  }
+
+  .form__color-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 450px;
+
+    margin-top: 50px;
+    margin-bottom: 26px;
+  }
+
+  .form__color-item {
+    width: 109px;
+
+    padding-left: 80px;
+    margin-bottom: 43px;
+  }
+
+  .form__color-checkbox::before {
+    width: 50px;
+    height: 48px;
+  }
+
+  .form__color-checkbox input[type="checkbox"]:checked + .form__checkbox-tick {
+    &::before {
+      left: 8px;
+      top: 30px;
+
+      width: 18px;
+      height: 2px;
+    }
+
+    &::after {
+      left: 19px;
+      top: 25px;
+
+      width: 30px;
+      height: 2px;
+    }
+  }
+
+  .form__name-wrapper {
+    width: 505px;
+
+    margin-top: 50px;
+    margin-bottom: 15px;
+  }
+
+  .form__name-item {
+    display: flex;
+
+    margin-bottom: 24px;
+  }
+
+  .form__input {
+    font-size: 19px;
+
+    background: transparent;
+
+    width: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+    margin-left: 25px;
+  }
+
+  .form__phone-item {
+    width: 486px;
+
+    margin-top: 50px;
+    margin-bottom: 24px;
+  }
+
+  .form__phone-item input {
+    margin-left: 0;
+  }
+
+  .form__legend-email {
+    margin-top: 17px;
+    margin-bottom: 70px;
+  }
+
+  .form__email-item {
+    width: 486px;
+  }
+
+  .form__email-item input {
+    margin-left: 0;
+  }
+
+  .form__text {
+    font-size: 19px;
+
+    width: 467px;
+
+    margin-top: 50px;
+    margin-bottom: 35px;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .form__comment {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: right;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .form__button {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .form__legend {
+    text-align: center;
+
+    margin-right: 10px;
+  }
+
+  .form__color-list {
+    width: 715px;
+  }
+
+  .form__name-wrapper {
+    width: 700px;
+  }
+
+  .form__phone-item {
+    width: 690px;
+  }
+
+  .form__email-item {
+    width: 690px;
+  }
+
+  .form__text {
+    width: 665px;
+  }
+
+  .form__button-wrapper {
+    justify-content: center;
+  }
+
+  .form__button {
+    margin-right: 165px;
+  }
 }
