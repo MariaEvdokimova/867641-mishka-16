@@ -1,7 +1,4 @@
 .main-nav {
-  width: 320px;
-  margin: 0 auto;
-
   background-color: $color-white;
 }
 
@@ -83,7 +80,7 @@
   &:hover .main-nav__item--icon {
     opacity: 1;
 
-    polygon {
+    path {
       fill: $seafoam-blue; //????????
     }
   }
@@ -121,9 +118,6 @@
 
 @media screen and (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
-    margin: 0;
-
     background-color: transparent;
   }
 
@@ -138,7 +132,10 @@
 
   .main-nav__list {
     display: flex;
-    margin: 0 45px;
+  }
+
+  .main-nav__site-list {
+    margin-left: -325px;
   }
 
   .main-nav__site-list li {
@@ -149,12 +146,8 @@
     font-size: 15px;
 
     padding-left: 0;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 0;
-  }
-
-  .main-nav__service-list {
-    justify-content: flex-end;
   }
 
   .main-nav__service-list li {
@@ -185,19 +178,10 @@
 }
 
 @media screen and (min-width: $desktop-width) {
-  .main-nav {
-    margin: 0 45px;
-  }
-
   .main-nav__wrapper {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  .main-nav__list {
-    margin: 0;
-    width: 500px;
   }
 
   .main-nav__site-list li {
@@ -209,6 +193,10 @@
     width: 185px;
     padding-left: 0;
     border-right: 1px solid $light-grey-border;
+  }
+
+  .main-nav__site-list {
+    margin-left: 0;
   }
 
   .main-nav__site-list a {

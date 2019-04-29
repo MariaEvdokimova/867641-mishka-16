@@ -21,6 +21,10 @@
 }
 
 @media screen and (min-width: $tablet-width) {
+  .about-us {
+    margin-bottom: 70px;
+  }
+
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
@@ -65,11 +69,12 @@
 
 @media screen and (min-width: $desktop-width) {
   .about-us {
-    margin-left: 180px;
+    margin-bottom: 80px;
   }
 
   .about-us__wrapper {
-    margin-right: 365px;
+    margin-left: 170px;
+    margin-right: 200px;
   }
 
   .about-us__title {

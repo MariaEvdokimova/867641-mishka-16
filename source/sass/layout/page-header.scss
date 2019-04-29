@@ -1,4 +1,4 @@
-.page-header {
+.page-header__wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -7,8 +7,6 @@
   position: relative;
 
   text-align: center;
-
-  width: 320px;
 
   margin: 0 auto;
   padding-top: 21px;
@@ -22,18 +20,15 @@
 }
 
 @media screen and (min-width: $tablet-width) {
-  .page-header {
-    display: block;
+  .page-header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .page-header__logo {
-    position: absolute;
-
     text-align: left;
 
-    margin-left: 55px;
-    margin-top: 22px;
-    padding: 0;
+    margin: 0;
 
     box-shadow: none;
   }
@@ -41,18 +36,27 @@
   .page-header__text {
     display: block;
 
-    position: absolute;
-    right: 0;
-    top: 92px;
+    text-align: right;
 
-    margin-right: 42px;
+    width: 668px;
+    margin-top: -23px;
   }
 }
 
 @media screen and (min-width: $desktop-width) {
+  .page-header__wrapper {
+    flex-direction: column-reverse;
+  }
+
   .page-header__logo {
     text-align: center;
 
     width: 1050px;
+    margin-top: -145px;
+  }
+
+  .page-header__text {
+    width: 1050px;
+    margin-top: 18px;
   }
 }
