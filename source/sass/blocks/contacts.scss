@@ -2,12 +2,14 @@
   @include bold-text(18px);
   text-align: left;
   color: $color-black;
-  margin-bottom: 22px;
 }
 
 .contacts__table {
   @include reset-margin-padding;
-  margin-bottom: 10px;
+
+  border-spacing: 0 10px;
+
+  margin-bottom: 25px;
 }
 
 .contacts__cell {
@@ -15,31 +17,54 @@
   line-height: 30px;
 
   vertical-align: top;
-
-  padding-bottom: 27px;
 }
 
 .contacts__cell:first-child {
   width: 85px;
 }
 
+.contacts__cell--underlined {
+  border-bottom: 1px solid $seafoam-blue;
+}
+
+.contacts__row:nth-child(2) .contacts__cell {
+  padding-top: 18px;
+}
+
 .contacts__map {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: $tablet-width) {
   .contacts__title {
+    position: relative;
+
     font-size: 43px;
     line-height: 50px;
 
-    margin-bottom: 45px;
+    margin-bottom: 48px;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      right: 0;
+      top: -15px;
+
+      width: 47px;
+      height: 82px;
+
+      background-image: url("../img/icon-flag.svg");
+    }
   }
 
   .contacts__table {
-    margin-bottom: 25px;
+    border-spacing: 0;
+
+    margin-bottom: 55px;
   }
 
   .contacts__table tbody {
@@ -60,6 +85,10 @@
     width: 70px;
   }
 
+  .contacts__row:nth-child(2) .contacts__cell {
+    padding-top: 0;
+  }
+
   .contacts__map {
     margin-bottom: 55px;
   }
@@ -72,7 +101,7 @@
 
 @media screen and (min-width: $desktop-width) {
   .contacts {
-    margin-top: 161px;
+    margin-top: 74px;
   }
 
   .contacts__wrapper {
@@ -86,12 +115,25 @@
     font-size: 53px;
     line-height: 57px;
 
-    margin-left: 120px;
+    padding-left: 120px;
     margin-top: 70px;
+
+    &::after {
+      left: 13px;
+      top: -9px;
+    }
   }
 
   .contacts__table {
     margin-left: 120px;
+  }
+
+  .contacts__cell:first-child {
+    width: 80px;
+  }
+
+  .contacts__row:nth-child(2) .contacts__cell {
+    padding-top: 27px;
   }
 
   .contacts__map {

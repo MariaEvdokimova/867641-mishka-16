@@ -13,11 +13,36 @@
 }
 
 .about-us__item {
+  display: flex;
+  flex-direction: column;
+
   @include bold-text(17px, 20px);
   text-align: left;
   color: $color-black;
 
-  padding-top: 85px;
+  margin-top: 30px;
+}
+
+.about-us__item svg {
+  text-align: center;
+
+  width: 55px;
+
+  margin-bottom: 20px;
+
+  fill: $seafoam-blue;
+}
+
+.about-us__item--price svg {
+  margin-bottom: 25px;
+}
+
+.about-us__item--like {
+  margin-top: 35px;
+}
+
+.about-us__item--support svg {
+  margin-bottom: 28px;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -43,7 +68,23 @@
     width: 295px;
     margin-right: 37px;
     margin-bottom: 10px;
-    padding-top: 102px;
+    margin-top: 50px;
+  }
+
+  .about-us__item svg {
+    margin-bottom: 15px;
+  }
+
+  .about-us__item--price svg {
+    margin-bottom: 24px;
+  }
+
+  .about-us__item--support svg {
+    margin-bottom: 28px;
+  }
+
+  .about-us__item--like svg {
+    margin-bottom: 23px;
   }
 
   .about-us__item:nth-child(4) {

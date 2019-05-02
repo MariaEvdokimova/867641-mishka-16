@@ -3,12 +3,29 @@
 }
 
 .form__legend {
+  position: relative;
+
+  width: 200px;
+
   @include bold-text(17px, 16px);
   text-align: left;
   text-transform: uppercase;
   color: $seafoam-blue;
 
   margin-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: 60px;
+    top: 6px;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: $seafoam-blue;
+  }
 }
 
 .form__item:nth-child(3) .form__legend {
@@ -20,7 +37,13 @@
 }
 
 .form__legend-email {
+  width: 180px;
+
   margin-bottom: 7px;
+
+  &::after {
+    left: 80px;
+  }
 }
 
 .form__type-list {
@@ -172,11 +195,33 @@
 }
 
 .form__phone-item {
+  position: relative;
+
   margin-bottom: 32px;
 }
 
+.form__phone-item svg {
+  position: absolute;
+
+  right: 7px;
+  top: 10px;
+
+  opacity: 0.2;
+}
+
 .form__email-item {
+  position: relative;
+
   margin-bottom: 33px;
+}
+
+.form__email-item svg {
+  position: absolute;
+
+  right: 7px;
+  top: 10px;
+
+  opacity: 0.2;
 }
 
 .form__text-item {
@@ -225,6 +270,11 @@
     width: 167px;
 
     margin-top: 68px;
+
+    &::after {
+      width: 0;
+      height: 0;
+    }
   }
 
   .form__type-list {
