@@ -41,6 +41,11 @@
     }
   }
 
+  .page-header__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+
   .page-header__text {
     display: block;
 
@@ -60,7 +65,13 @@
     text-align: center;
 
     width: 1050px;
-    margin-top: -145px;
+    margin-top: -165px;
+    padding-bottom: 0;
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: 72px;
   }
 
   .page-header__text {
