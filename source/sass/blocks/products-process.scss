@@ -45,6 +45,18 @@
 
   margin-top: -40px;
   margin-left: -55px;
+
+  &:hover svg {
+    width: 121px;
+    height: 92px;
+  }
+
+  &:active svg {
+    width: 81px;
+    height: 62px;
+
+    opacity: 0.3;
+  }
 }
 
 .products-process__text {

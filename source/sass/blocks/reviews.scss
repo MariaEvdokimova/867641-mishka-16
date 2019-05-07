@@ -71,6 +71,14 @@
   padding: 13px 40px 6px 37px;
 
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__prev--button {

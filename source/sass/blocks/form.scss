@@ -90,6 +90,15 @@
   border-radius: 50%;
 }
 
+.form__radio:hover + label::before {
+  border-color: $seafoam-blue;
+}
+
+.form__radio:active + label::before {
+  border-color: $color-grey-brown;
+  opacity: 0.3;
+}
+
 .form__radio:checked + label::after {
   content: "";
   position: absolute;
@@ -183,7 +192,7 @@
 .form__input {
   font-size: 17px;
   line-height: 18px;
-  color: rgba(68, 68, 68, 0.3);
+  color: $color-grey-brown;
 
   border: none;
   border-bottom: 2px solid $color-black;
@@ -192,6 +201,14 @@
 
   padding-top: 15px;
   padding-bottom: 16px;
+
+  &:hover {
+    border-bottom-color: $seafoam-blue;
+  }
+
+  &:focus {
+    border-bottom-color: $seafoam-blue;
+  }
 }
 
 .form__phone-item {
@@ -207,6 +224,21 @@
   top: 10px;
 
   opacity: 0.2;
+
+  &:hover {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:focus {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
 }
 
 .form__email-item {
@@ -222,6 +254,21 @@
   top: 10px;
 
   opacity: 0.2;
+
+  &:hover {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:focus {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    fill: $seafoam-blue;
+    opacity: 1;
+  }
 }
 
 .form__text-item {
@@ -231,13 +278,21 @@
 .form__text {
   font-size: 17px;
   line-height: 18px;
-  color: rgba(68, 68, 68, 0.3);
+  color: $color-grey-brown;
 
   border: 2px solid $color-black;
 
   width: 226px;
 
   padding: 15px;
+
+  &:hover {
+    border-color: $seafoam-blue;
+  }
+
+  &:focus {
+    border-color: $seafoam-blue;
+  }
 }
 
 .form__comment {

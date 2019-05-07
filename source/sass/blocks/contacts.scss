@@ -25,6 +25,14 @@
 
 .contacts__cell--underlined {
   border-bottom: 1px solid $seafoam-blue;
+
+  &:hover {
+    color: $seafoam-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__row:nth-child(2) .contacts__cell {
@@ -32,10 +40,23 @@
 }
 
 .contacts__map {
-  display: flex;
-  justify-content: center;
+  position: relative;
 
   margin-bottom: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 145px;
+    left: 50%;
+    margin-left: -20px;
+
+    width: 67px;
+    height: 100px;
+
+    background-image: url("../img/icon-map-pin.svg");
+  }
 }
 
 @media screen and (min-width: $tablet-width) {
