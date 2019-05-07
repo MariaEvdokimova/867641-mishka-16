@@ -54,12 +54,18 @@
   @include bold-text(19px, 24px);
   text-align: left;
   color: $color-white;
+
+  &:hover {
+    padding-bottom: 22px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .intro__link svg {
-  path {
-    fill: $intro-ico;
-  }
+  fill: $intro-ico;
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -119,6 +125,10 @@
     padding-top: 30px;
     padding-bottom: 28px;
     padding-left: 8px;
+
+    &:hover {
+      padding-bottom: 37px;
+    }
   }
 }
 

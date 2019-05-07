@@ -6,6 +6,20 @@
   display: none;
 }
 
+.page-footer__logo svg {
+  &:hover {
+    fill: $seafoam-blue;
+  }
+
+  &:focus {
+    fill: $seafoam-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media screen and (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
