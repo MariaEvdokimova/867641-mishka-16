@@ -6,6 +6,8 @@
 .page-header__logo {
   position: relative;
 
+  z-index: 20;
+
   text-align: center;
 
   margin: 0 auto;
@@ -13,6 +15,14 @@
   padding-bottom: 17px;
 
   box-shadow: inset 0 1px 0 0 $light-grey-border;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__text {
@@ -31,14 +41,6 @@
     margin: 0;
 
     box-shadow: none;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   .page-header__logo-image {
@@ -48,8 +50,12 @@
 
   .page-header__text {
     display: block;
+    position: relative;
+    z-index: 10;
 
     text-align: right;
+
+    background-color: transparent;
 
     width: 668px;
     margin-top: -23px;
@@ -64,7 +70,10 @@
   .page-header__logo {
     text-align: center;
 
-    width: 1050px;
+    width: 150px;
+
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -165px;
     padding-bottom: 0;
   }

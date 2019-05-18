@@ -122,17 +122,16 @@
 
 @media screen and (min-width: $desktop-width) {
   .products-process__wrapper {
-    flex-direction: row;
-
     margin-bottom: 105px;
   }
 
   .products-process__title-wrapper {
     flex-direction: column;
+    align-self: flex-end;
 
-    margin-top: 41px;
-    margin-left: 78px;
-    margin-bottom: 0;
+    margin-top: -414px;
+    margin-right: 58px;
+    margin-bottom: 10px;
   }
 
   .products-process__title-wrapper svg {
@@ -146,6 +145,8 @@
   }
 
   .products-process__video {
+    align-self: flex-start;
+
     line-height: 0;
 
     margin-bottom: 0;
@@ -161,7 +162,7 @@
   .products-process__wrapper-desc {
     align-self: flex-end;
 
-    margin-left: -230px;
+    margin-right: 57px;
     margin-bottom: 60px;
   }
 
@@ -169,7 +170,7 @@
     width: 230px;
 
     padding: 0;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
   }
 
   .products-process__button {
