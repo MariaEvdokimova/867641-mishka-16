@@ -124,6 +124,8 @@
 
 @media screen and (min-width: $tablet-width) {
   .main-nav {
+    z-index: 10;
+
     background-color: transparent;
   }
 
