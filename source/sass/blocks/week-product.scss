@@ -109,6 +109,7 @@
 
   .week-product__wrapper-desc {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .week-product__details {
@@ -126,7 +127,6 @@
 
   .week-product__image {
     align-self: flex-start;
-    order: 1;
 
     background-image: url("../img/triple-set-tablet@1x.jpg");
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@
     width: 291px;
     align-self: flex-end;
 
-    margin-left: -291px;
+    margin-top: -124px;
   }
 
   .week-product__price {
@@ -155,7 +155,7 @@
 @media screen and (min-width: $desktop-width) {
   .week-product {
     padding-bottom: 90px;
-    margin-bottom: 65px;
+    margin-bottom: 63px;
 
     &::after {
       height: 20px;
@@ -163,7 +163,7 @@
   }
 
   .week-product__wrapper-title {
-    margin-left: 30px;
+    margin-left: 35px;
   }
 
   .week-product__title {
@@ -183,6 +183,7 @@
 
   .week-product__wrapper-desc {
     margin-top: -165px;
+    margin-left: 6px;
   }
 
   .week-product__details {
@@ -191,11 +192,15 @@
   }
 
   .week-product__description {
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 
   .week-product__image {
     background-image: url("../img/triple-set-desktop@1x.jpg");
     width: 525px;
+  }
+
+  .week-product__order {
+    margin-left: 170px;
   }
 }

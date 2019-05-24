@@ -4,13 +4,8 @@
 
 .page-footer__logo {
   display: none;
-}
 
-.page-footer__logo svg {
-  &:hover {
-    fill: $seafoam-blue;
-  }
-
+  &:hover,
   &:focus {
     fill: $seafoam-blue;
   }

@@ -20,11 +20,23 @@
 }
 
 .contacts__cell:first-child {
-  width: 85px;
+  width: 90px;
+
+  padding-right: 30px;
 }
 
-.contacts__cell--underlined {
+.contacts__row:last-child .contacts__cell:last-child {
+  padding-right: 20px;
+}
+
+.contacts__mail {
+  color: $color-grey-brown;
+  font-size: 17px;
+  line-height: 30px;
+
   border-bottom: 1px solid $seafoam-blue;
+
+  padding-bottom: 3px;
 
   &:hover {
     color: $seafoam-blue;
@@ -44,7 +56,7 @@
 
   text-align: center;
 
-  margin-bottom: 40px;
+  margin-bottom: 33px;
 
   &::before {
     content: "";
@@ -90,7 +102,7 @@
       content: "";
       position: absolute;
 
-      right: 0;
+      right: 2px;
       top: -15px;
 
       width: 47px;
@@ -113,7 +125,7 @@
   }
 
   .contacts__row {
-    width: 330px;
+    width: 334px;
   }
 
   .contacts__cell {
@@ -122,6 +134,8 @@
 
   .contacts__cell:first-child {
     width: 70px;
+
+    padding-right: 6px;
   }
 
   .contacts__row:nth-child(2) .contacts__cell {
@@ -129,7 +143,7 @@
   }
 
   .contacts__map {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   .contacts__map img {
@@ -148,7 +162,7 @@
 
 @media screen and (min-width: $desktop-width) {
   .contacts {
-    margin-top: 74px;
+    margin-top: 70px;
   }
 
   .contacts__wrapper {
@@ -172,11 +186,12 @@
   }
 
   .contacts__table {
-    margin-left: 120px;
+    margin-left: 124px;
   }
 
   .contacts__cell:first-child {
-    width: 80px;
+    padding-right: 0;
+    width: 77px;
   }
 
   .contacts__row:nth-child(2) .contacts__cell {
