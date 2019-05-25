@@ -119,6 +119,11 @@
 
   .intro__item {
     width: 334px;
+
+    &:hover {
+      margin-top: -5px;
+      padding-bottom: 5px;
+    }
   }
 
   .intro__link {
